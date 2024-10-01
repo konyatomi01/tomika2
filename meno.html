@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Tomi weboldala</title>
+</head>
+<body>
+    <div class="xd3">
+        <div class="xd">
+            <img src="kep2.jpg" alt="" class="kep">
+            <div class="kozep">
+                <h1 class="text">Szupi</h1>
+                <button class="tovabb" @click="fun">👉Gomb👈</button>
+            </div>
+            <img src="kep2.jpg" alt="" class="kep">
+        </div>
+    </div>
+</body>
+</html>
+<style scoped>
+    .text {
+    font-size: 15vh;
+    font-family: 'Protest Riot';
+    color: blueviolet;
+    margin: 3vw;
+    text-align: center;
+}
+.kep {
+    width: 60vw;
+}
+.kozep {
+    text-align: center;
+}
+
+.xd3 {
+    width: 100vw;
+    height: 100vh;
+}
+@media screen and (orientation:landscape) {
+    .xd {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}
+.tovabb {
+    color: white;
+    background: blueviolet;
+    height: 10vh;
+    font-size: 7vh;
+    margin: 2vh;
+    text-wrap: nowrap;
+}
+
+
+@media screen and (orientation:portrait) {
+    .xd {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+}
+</style>
+
+<script>
+const tovabb = document.querySelector(".tovabb") 
+
+tovabb.addEventListener('click', () => {
+    window.location.href = "https://m.me/tomikaxdd";})
+</script>
